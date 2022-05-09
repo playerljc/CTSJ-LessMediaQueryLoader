@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "一个在less中处理媒体查询webpack的loader",
   "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildpackage": "ctbuild buildpackage",
