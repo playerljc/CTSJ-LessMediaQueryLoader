@@ -1,2 +1,0 @@
-# CTJS-LessMediaQueryLoader
-一个在less中处理媒体查询webpack的loader
