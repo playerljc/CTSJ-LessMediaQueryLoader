@@ -67,7 +67,7 @@ The *.less files in any directory can have the agreed three media query files, *
           use: [
             {
               loader: '@ctsj/less-media-query-loader',
-              // &#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x591A;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5A92;&#x4F53; &#x67E5;&#x8BE2;&#xFF0C;&#x5C5E;&#x6027;&#x662F;*.mq.${&#x5C5E;&#x6027;&#x540D;}.less&#xFF0C;&# x503C;&#x662F;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;
+              // Multiple custom media queries can be added, the property is *.mq.${property name}.less, and the value is the media query string
               options: {
                  bigScreen: '@media screen and (min-width: 1925px)'
               }
