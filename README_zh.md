@@ -1,5 +1,7 @@
 # LessMediaQueryLoader
 
+简体中文 | [English](./README.md)
+
 #### 一个在less中处理媒体查询webpack的loader
 
 ## 简介
@@ -33,6 +35,8 @@ user
 
 ## 使用
 
+### 基本使用
+
 `
   <pre>
   {
@@ -47,3 +51,31 @@ user
   }
   </pre>
 `
+
+### 使用配置
+
+`
+  <pre>
+  /* webpack&#x914D;&#x7F6E; */
+  {
+    module:{
+      rules:[
+        {
+          test: /\.less$/,
+          use: [
+            {
+              loader: '@ctsj/less-media-query-loader',
+              // &#x53EF;&#x4EE5;&#x52A0;&#x5165;&#x591A;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#xFF0C;&#x5C5E;&#x6027;&#x662F;*.mq.${&#x5C5E;&#x6027;&#x540D;}.less&#xFF0C;&#x503C;&#x662F;&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x5B57;&#x7B26;&#x4E32;
+              options: {
+                 bigScreen: '@media screen and (min-width: 1925px)'
+              }
+            }
+          ],
+        }
+      ]
+    }
+  }
+
+  /* &#x52A0;&#x5165;*.mq.bigScreen.less&#x6587;&#x4EF6; */
+  </pre>
+    `
