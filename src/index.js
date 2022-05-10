@@ -2,6 +2,10 @@ const path = require('path');
 const fs = require('fs');
 const OS = require('os');
 
+function isObject(obj) {
+  return obj instanceof Object && !Array.isArray(obj) && !(obj instanceof Function);
+}
+
 const mediaQuery = new Map([
   ['pc', `@media screen and (min-width: 1025px) `],
   ['phone', `@media screen and (max-width: 768px) `],
@@ -9,10 +13,22 @@ const mediaQuery = new Map([
 ]);
 
 module.exports = function (source) {
+  // 获取配置
+  const options = this.getOptions();
+
+  // 配置混入到mediaQuery
+  if(options && isObject(options)) {
+
+    for(const p in options) {
+      mediaQuery.set(p, options[p]);
+    }
+  }
+
   const platforms = Array.from(mediaQuery.keys());
 
   // index.mq.pc.less
 
+  // 资源的路径
   const { resourcePath } = this;
 
   // less文件名(含有扩展名)
