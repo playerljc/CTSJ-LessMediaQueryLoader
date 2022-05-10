@@ -1,6 +1,6 @@
 # LessMediaQueryLoader
 
-English | [简体中文](./README-zh_CN.md)
+English | [简体中文](./README_zh.md)
 
 #### A loader that handles media query webpack in less
 
@@ -57,8 +57,7 @@ The *.less files in any directory can have the agreed three media query files, *
 ### Using configuration
 
 ```
-  <pre>
-  /* webpack&#x914D;&#x7F6E; */
+  /* webpack configure; */
   {
     module:{
       rules:[
@@ -78,6 +77,5 @@ The *.less files in any directory can have the agreed three media query files, *
     }
   }
 
-  /* &#x52A0;&#x5165;*.mq.bigScreen.less&#x6587;&#x4EF6; */
-  </pre>
+  /* add *.mq.bigScreen.less files; */
 ```

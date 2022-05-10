@@ -51,13 +51,12 @@ user
       ]
     }
   }
-  </pre>
 ```
 
 ### 使用配置
 
 ```
-  /* webpack&#x914D;&#x7F6E; */
+  /* webpack配置 */
   {
     module:{
       rules:[
@@ -77,6 +76,5 @@ user
     }
   }
 
-  /* &#x52A0;&#x5165;*.mq.bigScreen.less&#x6587;&#x4EF6; */
-  </pre>
+  /* 加入*.mq.bigScreen.less文件 */
 ```
