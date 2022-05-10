@@ -9,10 +9,13 @@
 我们平时写媒体查询的时候都是将非媒体查询的css(less)代码和媒体查询的css(less)代码都混杂在一起，这样写的弊端在于不好按照媒体查询的类型进行抽取，修改和维护困难，主要是不好找，本插件就是要解决这样的问题而编写的。
 
 ## 安装
+``` 
+npm install @ctsj/less-media-query-loader --save-dev 
+```
 
-` npm install @ctsj/less-media-query-loader --save-dev `
-
-` yarn add @ctsj/less-media-query-loader -D `
+``` 
+yarn add @ctsj/less-media-query-loader -D 
+```
 
 ## 例子
 
@@ -37,8 +40,7 @@ user
 
 ### 基本使用
 
-`
-  <pre>
+```
   {
     module:{
       rules:[
@@ -50,12 +52,11 @@ user
     }
   }
   </pre>
-`
+```
 
 ### 使用配置
 
-`
-  <pre>
+```
   /* webpack&#x914D;&#x7F6E; */
   {
     module:{
@@ -78,4 +79,4 @@ user
 
   /* &#x52A0;&#x5165;*.mq.bigScreen.less&#x6587;&#x4EF6; */
   </pre>
-    `
+```

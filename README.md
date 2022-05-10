@@ -10,9 +10,13 @@ When we usually write media queries, we always mix the css(less) code of non-med
 
 ## Install
 
-` npm install @ctsj/less-media-query-loader --save-dev `
+``` 
+npm install @ctsj/less-media-query-loader --save-dev 
+```
 
-` yarn add @ctsj/less-media-query-loader -D `
+``` 
+yarn add @ctsj/less-media-query-loader -D 
+```
 
 ## example
 
@@ -37,8 +41,7 @@ The *.less files in any directory can have the agreed three media query files, *
 
 ### Basic usage
 
-`
-  <pre>
+```
   {
     module:{
       rules:[
@@ -49,12 +52,11 @@ The *.less files in any directory can have the agreed three media query files, *
       ]
     }
   }
-  </pre>
-`
+```
 
 ### Using configuration
 
-`
+```
   <pre>
   /* webpack&#x914D;&#x7F6E; */
   {
@@ -78,4 +80,4 @@ The *.less files in any directory can have the agreed three media query files, *
 
   /* &#x52A0;&#x5165;*.mq.bigScreen.less&#x6587;&#x4EF6; */
   </pre>
-    `
+```
