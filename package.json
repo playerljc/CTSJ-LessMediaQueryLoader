@@ -1,6 +1,6 @@
 {
   "name": "@ctsj/less-media-query-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个在less中处理媒体查询webpack的loader",
   "main": "src/index.js",
   "files": [
@@ -44,6 +44,9 @@
   "homepage": "https://github.com/playerljc/CTSJ-LessMediaQueryLoader",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "loader-utils": "^2.0.2"
   },
   "devDependencies": {
     "@umijs/fabric": "^2.10.2",

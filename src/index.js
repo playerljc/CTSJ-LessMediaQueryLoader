@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const OS = require('os');
+const { getOptions } = require('loader-utils');
 
 function isObject(obj) {
   return obj instanceof Object && !Array.isArray(obj) && !(obj instanceof Function);
@@ -14,12 +15,11 @@ const mediaQuery = new Map([
 
 module.exports = function (source) {
   // 获取配置
-  const options = this.getOptions();
+  const options = 'getOptions' in this ? this.getOptions() : getOptions(this);
 
   // 配置混入到mediaQuery
-  if(options && isObject(options)) {
-
-    for(const p in options) {
+  if (options && isObject(options)) {
+    for (const p in options) {
       mediaQuery.set(p, options[p]);
     }
   }
